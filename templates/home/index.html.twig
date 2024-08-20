@@ -17,18 +17,46 @@
             justify-content: center;
         }
 
+        /* Styling for the four boxes */
+        .boxes-container {
+            display: flex;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            flex: 1;
+            padding: 4rem;
+            color: #fff;
+            text-align: center;
+            border-radius: 0; /* Remove border-radius for square edges */
+            margin: 0; /* Remove margin between boxes */
+        }
+
+        .box-1 {
+            background-color: #111111; /* Darkest shade */
+        }
+
+        .box-2 {
+            background-color: #222222; /* Slightly lighter */
+        }
+
+        .box-3 {
+            background-color: #333333; /* Medium shade */
+        }
+
+        .box-4 {
+            background-color: #444444; /* Lightest shade */
+        }
+
         /* Ensure boxes are responsive */
         .boxes-container {
             display: flex;
             flex-wrap: wrap;
         }
-        .box {
-            flex: 1 1 calc(25% - 20px);
-            box-sizing: border-box;
-            padding: 20px;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
+
         @media (max-width: 768px) {
             .box {
                 flex: 1 1 100%;
@@ -84,7 +112,6 @@
     <!-- Featured Cards Carousel -->
     <div class="text-bg-dark p-3 text-center">
         <h1 class="display-4 text-center mb-4">Our Services</h1>
-
     </div>
 
     <div class="container col-xxl-8 px-4 py-5">
