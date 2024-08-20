@@ -1,3 +1,140 @@
 body {
-    background-color: skyblue;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.navbar-brand img {
+    max-width: 90px;
+    height: auto;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    font-size: 1.0rem;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    padding: 0.75rem 1rem;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #0c487a;
+    color: #ffffff !important;
+}
+
+.nav-link.active {
+    background-color: #007bff;
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HOME PAGE */
+/* Optional: Adjust the height for smaller screens */
+@media (max-width: 768px) {
+    #image {
+        height: 70vh; /* Adjusts height for smaller screens */
+    }
+}
+
+/* Styling for the four boxes */
+.boxes-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    flex: 1;
+    padding: 4rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 0; /* Remove border-radius for square edges */
+    margin: 0; /* Remove margin between boxes */
+}
+
+.box-1 {
+    background-color: #111111; /* Darkest shade */
+}
+
+.box-2 {
+    background-color: #222222; /* Slightly lighter */
+}
+
+.box-3 {
+    background-color: #333333; /* Medium shade */
+}
+
+.box-4 {
+    background-color: #444444; /* Lightest shade */
+}
+
+/* Style the dropdown menu to be hidden by default */
+.dropdown-menu {
+    display: none;
+    background-color: #343a40;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.375rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Style dropdown items */
+.dropdown-item {
+    color: #ffffff;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+}
+
+.dropdown-item:hover {
+    background-color: #495057;
+}
+
+/* Show the dropdown menu on hover */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Submenu styling */
+.dropdown-menu .dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-menu .dropdown-submenu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: -1px; /* Align with the parent item */
+    border-radius: 0.375rem;
+    min-width: 180px; /* Adjust as needed */
+}
+
+.dropdown-menu .dropdown-submenu:hover .dropdown-menu {
+    display: block;
 }
