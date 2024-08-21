@@ -13,6 +13,7 @@ class FindUsController extends AbstractController
     {
         return $this->render('find_us/index.html.twig', [
             'controller_name' => 'FindUsController',
+            'google_maps_api_key' => $_ENV['GOOGLE_MAPS_API_KEY'],
         ]);
     }
 }
