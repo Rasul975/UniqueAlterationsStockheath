@@ -52,25 +52,21 @@
         }
 
         /* Ensure boxes are responsive */
-        .boxes-container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
         @media (max-width: 768px) {
             .box {
                 flex: 1 1 100%;
+                padding: 2rem; /* Reduce padding for smaller screens */
             }
         }
     </style>
 {% endblock %}
 
 {% block body %}
-    <div class="position-relative overflow-hidden text-center bg-body-tertiary" id="image">
+    <div class="position-relative overflow-hidden text-center bg-body-tertiary" id="image" data-aos="fade-in">
         <div class="col-md-6 p-lg-5 mx-auto my-5">
             <h1 class="display-3 fw-bold">Unique Alterations &amp; Dry Cleaning</h1>
             <h3 class="fw-normal text-muted mb-3">Clothing alteration in Stockton Heath, <br> Warrington</h3>
-            <a href="hhttps://www.facebook.com/24UniqueAlterations/" target="_blank" class="text-white me-2"><i class="fab fa-facebook text-white fa-3x"></i></a>
+            <a href="https://www.facebook.com/24UniqueAlterations/" target="_blank" class="text-white me-2"><i class="fab fa-facebook text-white fa-3x"></i></a>
             <a href="https://www.instagram.com/unique.alterations/?hl=en-gb" target="_blank" class="text-white me-2"><i class="fab fa-instagram text-white fa-3x"></i></a>
             <a href="mailto:info@uniquealterations.co.uk" class="text-white"><i class="fas fa-envelope text-white fa-3x"></i></a>
         </div>
@@ -78,64 +74,58 @@
 
     <!-- Four Boxes at the End -->
     <div class="boxes-container">
-        <div class="box box-1">
+        <div class="box box-1" data-aos="fade-up" data-aos-delay="100">
             <i class="fa-duotone fa-solid fa-scissors fa-2x"></i>
             <h2>Knowledgeable</h2>
             <p>From skirts and shirts to coats and bridal gowns, including trousers, jeans, jackets, prom dresses, leather, upholstery, and much more — our experts at Quick Stitch handle it all with professionalism every day.</p>
         </div>
-        <div class="box box-2">
+        <div class="box box-2" data-aos="fade-up" data-aos-delay="200">
             <i class="fa-sharp fa-solid fa-tag fa-2x"></i>
             <h2>Price</h2>
             <p>We believe top-quality work should be accessible to everyone, so we strive to make our services affordable.</p>
         </div>
-        <div class="box box-3">
+        <div class="box box-3" data-aos="fade-up" data-aos-delay="300">
             <i class="fa-sharp-duotone fa-solid fa-bell-concierge fa-2x"></i>
             <h2>Same-day Service</h2>
             <p>We are dedicated to exceptional service, even if it means returning your repaired or altered garments on the same day.</p>
         </div>
-        <div class="box box-4">
+        <div class="box box-4" data-aos="fade-up" data-aos-delay="400">
             <i class="fa-regular fa-gem fa-2x"></i>
             <h2>Excellence</h2>
             <p>We are highly valued by our customers for upholding the highest standards of quality in everything we do, with meticulous attention to detail.</p>
         </div>
     </div>
 
-    <div class="px-4 py-5 my-5 text-center">
+    <div class="px-4 py-5 my-5 text-center" data-aos="fade-up">
         <h1 class="display-5 fw-bold text-body-emphasis">Unique Alterations &amp; Dry Cleaning</h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">Whether you need last-minute alterations on your wedding gown, repairs for your cherished handbag, adjustments to the waist of your trousers, or any other alterations, bring them to us. We’ll have everything looking fantastic and ready to impress, all in no time.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            </div>
         </div>
     </div>
 
     <!-- Featured Cards Carousel -->
-    <div class="text-bg-dark p-3 text-center">
+    <div class="text-bg-dark p-3 text-center" data-aos="fade-in">
         <h1 class="display-4 text-center mb-4">Our Services</h1>
     </div>
 
     <div class="container col-xxl-8 px-4 py-5">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5" data-aos="fade-up" data-aos-delay="100">
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="{{ asset('images/suit_1_min.jpg') }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Alteration Services</h1>
                 <p class="lead">Our experts are equipped to handle every type of alteration, no matter how simple or complex. From letting garments out and taking them in, to shoulder widening, reweaving, tapering, and beyond, we master even the most intricate adjustments. Whether it's a minor tweak or a major modification, we ensure your garments fit perfectly and look their best.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                </div>
             </div>
         </div>
     </div>
 
-    <div class="text-bg-dark">
+    <div class="text-bg-dark" data-aos="fade-up" data-aos-delay="200">
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-white">Dry Cleaning</h1>
                     <p class="lead">Bring your ruffled dresses, suits, trousers, shirts, and more to Quick Stitch and experience the finest dry cleaning service in the area. We pride ourselves on offering fast turnarounds and delivering impeccable cleaning and pressing. Whether it's your everyday wear or your most cherished garments, we treat each piece with the utmost care and precision, ensuring they return to you looking flawless and feeling fresh.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    </div>
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
                     <img src="{{ asset('images/clothes-hanger.jpg') }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
@@ -144,7 +134,7 @@
         </div>
     </div>
 
-    <div class="container col-xxl-8 px-4 py-5">
+    <div class="container col-xxl-8 px-4 py-5" data-aos="fade-up" data-aos-delay="300">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="{{ asset('images/dress-1.jpg') }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
@@ -152,8 +142,6 @@
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Dress Alterations</h1>
                 <p class="lead">Unique Alterations excels in dress alterations. Whether you have a chic cocktail dress or a straightforward work dress, our skilled professionals are dedicated to tailoring each piece to perfection, ensuring it fits flawlessly and enhances your style.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                </div>
             </div>
         </div>
     </div>
